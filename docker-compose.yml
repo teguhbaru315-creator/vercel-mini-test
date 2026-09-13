@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: vercel-mini-test
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3015:80"
